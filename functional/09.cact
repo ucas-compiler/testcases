@@ -3,6 +3,7 @@ int defn(){
 }
 
 int main(){
-    int a=defn();
+    int a=0;
+    a = defn();
     return a;
 }
