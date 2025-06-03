@@ -1,7 +1,8 @@
 int a = 7;
 
 int func() {
-	int b = a;
+	int b = -1;
+	b = a;
 	int a = 1;
 	if (a == b) {
 		a = a + 1;
