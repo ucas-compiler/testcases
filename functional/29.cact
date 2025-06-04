@@ -32,8 +32,6 @@ int main()
     print_char('\n');
 
     int i0 = 0, i1 = 1, i2 = 2, i3 = 3, i4 = 4;
-    while (i0 && i1) print_char(' ');
-    if (i0 || i1) print_char('C');
     if (i0 >= i1 || i1 <= i0) print_char('H');
     if (i2 >= i1 && i4 != i3) { print_char('I'); }
     if (i0 == !i1 && i3 < i3 || i4 >= i4) { print_char('J'); }
