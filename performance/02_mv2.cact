@@ -2,7 +2,7 @@ int x;
 
 const int N = 2010;
 
-void mv(int n, int A[][N], int b[], int res[]){
+void mv(int n, int A[][2010], int b[], int res[]){
     int x, y;
     y = 0;
     x = 11;
@@ -31,9 +31,9 @@ void mv(int n, int A[][N], int b[], int res[]){
     }
 }
 
-int A[N][N];
-int B[N];
-int C[N];
+int A[2010][2010];
+int B[2010];
+int C[2010];
 
 int main(){
     int n = get_int();

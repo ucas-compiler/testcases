@@ -1,6 +1,6 @@
 const int N = 1024;
 
-void mm(int n, int A[][N], int B[][N], int C[][N]){
+void mm(int n, int A[][1024], int B[][1024], int C[][1024]){
     int i, j, k;
 
     i = 0; j = 0;
@@ -33,9 +33,9 @@ void mm(int n, int A[][N], int B[][N], int C[][N]){
     }
 }
 
-int A[N][N];
-int B[N][N];
-int C[N][N];
+int A[1024][1024];
+int B[1024][1024];
+int C[1024][1024];
 
 int main(){
     int n = get_int();
