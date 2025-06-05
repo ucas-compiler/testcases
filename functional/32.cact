@@ -25,7 +25,7 @@ float circle_area(float radius) {
 // float -> float -> int function & float/int expression
 int float_eq(float a, float b) {
   if (float_abs(a - b) < EPS) {
-    return 1 * 2. / 2;
+    return 1;
   } else {
     return 0;
   }
@@ -47,7 +47,7 @@ void ok() {
 }
 
 void assert(int cond) {
-  if (!cond) {
+  if (cond == 0) {
     error();
   } else {
     ok();
@@ -75,8 +75,8 @@ int main() {
   assert_not(float_eq(HEX2, FACT));
   assert_not(float_eq(EVAL1, EVAL2));
   assert(float_eq(EVAL2, EVAL3));
-  assert(float_eq(circle_area(RADIUS) /* f->i implicit conversion */,
+  assert(float_eq(circle_area(RADIUS) /* no f->i implicit conversion */,
                   circle_area(FIVE)));
-  assert_not(float_eq(CONV1, CONV2) /* i->f implicit conversion */);
+  assert_not(float_eq(CONV1, CONV2) /* no i->f implicit conversion */);
   return 0;
 }
