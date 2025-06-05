@@ -13,13 +13,13 @@ const int MAX = 1000000000, TWO = 2, THREE = 3;
 
 // float -> float function
 float float_abs(float x) {
-  if (x < 0) return -x;
+  if (x < 0.0) return -x;
   return x;
 }
 
 // int -> float function & float/int expression
-float circle_area(int radius) {
-  return (PI * radius * radius + (radius * radius) * PI) / 2;
+float circle_area(float radius) {
+  return (PI * radius * radius + (radius * radius) * PI) / 2.0;
 }
 
 // float -> float -> int function & float/int expression
