@@ -65,10 +65,10 @@ void assert_not(int cond) {
 int main() {
   float EVAL1 = 0.0;
   EVAL1 = PI * RADIUS * RADIUS;
-  float EVAL2 = 0.0;
-  EVAL2 = 2 * PI_HEX * RADIUS;
-  float EVAL3 = 0.0;
-  EVAL3 = PI * 2 * RADIUS;
+  float EVAL2 = 2.0;
+  EVAL2 = EVAL2 * PI_HEX * RADIUS;
+  float EVAL3 = 2.0;
+  EVAL3 = PI * EVAL3 * RADIUS;
   int FIVE = 0;
   FIVE = TWO + THREE;
   
