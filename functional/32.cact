@@ -27,18 +27,11 @@ int float_eq(float a, float b) {
 }
 
 void error() {
-  print_char('e');
-  print_char('r');
-  print_char('r');
-  print_char('o');
-  print_char('r');
-  print_char('\n');
+  print_int(-1);
 }
 
 void ok() {
-  print_char('o');
-  print_char('k');
-  print_char('\n');
+  print_int(1);
 }
 
 void assert(int cond) {
