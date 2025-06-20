@@ -16,7 +16,7 @@ int main()
     if (inc_a() != 0 && inc_a() != 0 && inc_a() != 0) {
       a = a + b;
     }
-    if (inc_a() < 14 || inc_a() != 0 && (inc_a() - inc_a() + 1 != 0)) {
+    if (inc_a() < 14 || inc_a() != 0 && inc_a() - inc_a() + 1 != 0) {
       a = b;
       b = b * 2;
     } else {
